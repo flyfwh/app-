@@ -1,21 +1,17 @@
-# project
-
-> A Vue.js project
-
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+# 这是一个基于Vue开发的商城小项目
+>主要实现新闻资讯、图片分享、商品购买、购物车模块的功能，以及对新闻、图片、商品的评论功能，模块的跳转用router-link实现
+## 新闻资讯
+> 用get方法从数据接口获取新闻列表并渲染到APP页面上，点击对应新闻实现路由跳转，跳转到新闻详情路由，并将对应的新闻ID作为路由参数传递过去，在新闻详情中可进行评论
+## 图片分享
+> 用get方法数据接口获取图片列表并渲染到APP页面上
+> 并根据图片类别，用MUI里面的Scroll实现图片类别滚动条，可选择不同类别的图片
+> 点击对应图片实现路由跳转，跳转到图片详情路由，并将对应的新闻ID作为路由参数传递过去
+> 在图片详情中根据图片ID从接口获取其子图片，并用vue-preview实现缩略图
+> 在图片详情的下方实现评论功能
+## 商品购买
+> 从接口获取商品列表，并分两列渲染到页面中,点击对应商品可跳转至购买界面，并将其商品ID作为路由参数传递过去
+> 在全局中创建一个store，并声明一个car数组存放购物车信息
+> 在购买界面可以根据自己需求将商品添加进购物车中，并保存到store中的car数组中，并将car保存进localStorage中，以保APP下次开启仍能从本地获取购物车信息
+## 购物车
+> 将购物车右上角的数量徽标值与store中car的商品总数绑定
+> 获取本地的购物车商品信息，并用v-for渲染到购物车界面
