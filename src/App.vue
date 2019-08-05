@@ -22,7 +22,7 @@
       <nav class="mui-bar mui-bar-tab">
         <router-link  class="mui-tab-item-llb " to="/home">
           <span class="mui-icon mui-icon-home"></span>
-          <span class="mui-tab-label">首页</span>
+          <span class="mui-tab-label">首页11</span>
         </router-link>
         <router-link class="mui-tab-item-llb" to="/search">
           <span class="mui-icon mui-icon-search"></span>
